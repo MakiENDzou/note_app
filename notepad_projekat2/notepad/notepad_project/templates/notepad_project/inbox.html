@@ -1,0 +1,75 @@
+{% extends 'notepad_project/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="background-lightblack" id="note-view">
+        <div class="background-black">
+            <h2 class="arial-font">Notes List</h2>
+
+            <!-- <div class="hr-padding">
+                <hr class="color-gray">
+            </div> -->
+        </div>
+
+        <!-- <div>
+            <hr class="color-gray">
+        </div> -->
+
+
+        <div class="">
+            <div class="flex-row2">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <h3 class="arial-font2"> Notes </h3>
+            <!-- <h3 class="arial-font2" id="newBtn"> Make new note </h3> -->
+            </div>
+
+           
+
+
+
+        </div>
+
+        <div id="notes-view">
+
+        </div>
+
+
+        <div class="margin-above">
+            <!-- <a href="note"> -->
+                <i class="fa fa-plus orange fa-2xl" id="toCreate"></i></i>
+            <!-- </a> -->
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div id="noteDetail">
+
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block script %}
+    <script src="{% static 'notepad_project/inbox.js' %}"></script>
+{% endblock %}

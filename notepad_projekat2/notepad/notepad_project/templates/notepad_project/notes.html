@@ -1,0 +1,63 @@
+{% extends 'notepad_project/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    
+    <div class="background-lightblack">
+        <div class="background-black">
+            <h2 class="arial-font6">Your note</h2>
+
+            
+        </div>
+
+        
+        
+
+        <div class="" id="compose-form">
+            <div class="">
+                
+                <form>
+                    {% csrf_token %}
+                    <div class="flex-row3 ">
+                        <input type="submit" class="arial-font3" value="Save" id="createBtn">
+                        <input type="submit" class="arial-font3" value="Delete" id="deleteBtn">
+                    </div>
+                    <textarea class="" name="textArea">
+                        
+
+
+                    </textarea>
+                </form>
+            </div>
+
+           
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block script %}
+    <script src="{% static 'notepad_project/inbox.js' %}"></script>
+{% endblock %}
